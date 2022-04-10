@@ -1,17 +1,15 @@
-/*Variables*/
-
-$primary-color:aquamarine;
-$secundary-color: blue;
-$FuenteTitulo:30px; 
-$ColorBody: blueviolet;
-$Videos: width 480px, height 290px;
 
 @import "BodyKeyfremes";
 @import "index";
 @import "contacto";
 @import "mediaq";
-@import "variables";
+@import "Variables";
 
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin:0px;
+}
 .GaleriaContainer{
     margin-top:80px;
     justify-content: center;
@@ -76,6 +74,10 @@ $Videos: width 480px, height 290px;
 
 }
 
-
+$primary-color:aquamarine;
+$secundary-color: blue;
+$FuenteTitulo:30px; 
+$ColorBody: blueviolet;
+$letramediana:20px;
 
 
