@@ -1,0 +1,81 @@
+/*Variables*/
+
+$primary-color:aquamarine;
+$secundary-color: blue;
+$FuenteTitulo:30px; 
+$ColorBody: blueviolet;
+$Videos: width 480px, height 290px;
+
+@import "BodyKeyfremes";
+@import "index";
+@import "contacto";
+@import "mediaq";
+@import "variables";
+
+.GaleriaContainer{
+    margin-top:80px;
+    justify-content: center;
+
+
+    .RemomendacionesIndex{
+        text-align: center;
+        text-decoration: underline;
+        margin-top: 50px;
+        animation-name: aparecer14;
+        animation-duration: 8s;
+     animation-timing-function: linear;
+     animation-iteration-count: infinite;
+    }
+
+.ContainerFotos{
+    margin-left: 50px;
+
+
+.foto4{
+    transition: height 5s, width 5s;
+&:hover{
+    height: 380px; width: 240px;
+    transform:scale(1.0);}
+}
+
+.foto3{
+    transition: height 5s, width 5s;
+
+&:hover{
+    height: 380px; width: 240px;
+    transform:scale(1.0);}
+}
+
+
+
+.foto2{
+    transition: height 5s, width 5s;
+&:hover{
+    height: 380px; width: 240px;
+    transform:scale(1.0);}
+}
+
+
+.foto1{
+    transition: height 5s, width 5s;
+&:hover{
+    height: 380px; width: 240px;
+    transform:scale(1.0);}
+}
+
+}
+
+
+.ReseñasIndex{
+    text-align: center;
+    color: blueviolet;
+    text-decoration: underline;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+}
+
+
+
+

@@ -1,0 +1,49 @@
+
+@media screen and (max-width: 700px){
+
+    .PortadaIndex{
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        width: 100px;
+    }
+
+
+    .RecomendacionesBody{
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+.RemomendacionesIndex{
+    font-size: 18px;
+}
+
+.ImagenFondo {
+    width: 180px;
+    height: 80px;
+}
+
+
+    .VideoIndex1{
+        width: 230px;
+        height: 100px;   
+        margin-left: auto;
+    }
+
+    .VideoIndex2{
+        width: 230px;
+        height: 100px;
+   
+    }
+
+    .RedesIndex{
+        display: flex;
+        flex-direction: column;
+        font-size: 100px;
+        margin-top: 50px;
+    }
+
+
+
+}
