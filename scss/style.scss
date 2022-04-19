@@ -23,6 +23,7 @@
         animation-duration: 8s;
      animation-timing-function: linear;
      animation-iteration-count: infinite;
+     
     }
 
 .ContainerFotos{
@@ -32,7 +33,7 @@
 .foto4{
     transition: height 5s, width 5s;
 &:hover{
-    height: 380px; width: 240px;
+    height: $alto*2; width: $ancho*2;
     transform:scale(1.0);}
 }
 
@@ -40,7 +41,7 @@
     transition: height 5s, width 5s;
 
 &:hover{
-    height: 380px; width: 240px;
+    height: $alto*2; width: $ancho*2;
     transform:scale(1.0);}
 }
 
@@ -49,7 +50,7 @@
 .foto2{
     transition: height 5s, width 5s;
 &:hover{
-    height: 380px; width: 240px;
+    height: $alto*2; width: $ancho*2;
     transform:scale(1.0);}
 }
 
@@ -57,11 +58,12 @@
 .foto1{
     transition: height 5s, width 5s;
 &:hover{
-    height: 380px; width: 240px;
+    height: $alto*2; width: $ancho*2;
     transform:scale(1.0);}
 }
 
 }
+
 
 
 .ReseñasIndex{
@@ -72,12 +74,9 @@
     margin-bottom: 50px;
 }
 
+
+
 }
 
-$primary-color:aquamarine;
-$secundary-color: blue;
-$FuenteTitulo:30px; 
-$ColorBody: blueviolet;
-$letramediana:20px;
 
 

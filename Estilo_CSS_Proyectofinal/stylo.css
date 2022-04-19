@@ -1,7 +1,4 @@
 @charset "UTF-8";
-.BodyIndex {
-  background-image: linear-gradient(to bottom, aquamarine, white); }
-
 @keyframes aparecer14 {
   0% {
     opacity: 5%;
@@ -81,7 +78,7 @@
 .ContactoContainer {
   margin-left: 20px;
   margin-top: 100px; }
-  .ContactoContainer .VideoIndex1 {
+  .ContactoContainer .VideoIndex1, .ContactoContainer .VideoIndex2 {
     width: 470px;
     height: 290px; }
   .ContactoContainer .VideoIndex2 {
@@ -120,7 +117,7 @@
   .ImagenFondo {
     width: 180px;
     height: 80px; }
-  .VideoIndex1 {
+  .VideoIndex1, .VideoIndex2 {
     width: 230px;
     height: 100px;
     margin-left: auto; }
@@ -132,6 +129,102 @@
     flex-direction: column;
     font-size: 100px;
     margin-top: 50px; } }
+
+/*Extend*/
+.boton--aceptar, .botton--cancelar {
+  color: #7757c2;
+  text-align: center;
+  border-radius: 20px; }
+
+.boton--aceptar {
+  background-color: #045372;
+  color: white; }
+
+.botton--cancelar {
+  background-color: #4c024e;
+  color: white; }
+
+/*Extend aplicado en videos*/
+.VideoIndex1, .VideoIndex2 {
+  width: 230px;
+  height: 100px;
+  margin-left: auto; }
+
+/*Mixin*/
+.ContactoContainer .VideoIndex1, .ContactoContainer .VideoIndex2, .ContactoContainer .VideoIndex2 {
+  width: 470px;
+  height: 290px; }
+
+/*mapa redes*/
+.btn--facebook {
+  background-color: blue;
+  width: 15px;
+  height: 15px; }
+
+.btn--twitter {
+  background-color: red;
+  width: 15px;
+  height: 15px; }
+
+.btn--tiktok {
+  background-color: black;
+  width: 15px;
+  height: 15px; }
+
+.btn--whatssap {
+  background-color: green;
+  width: 15px;
+  height: 15px; }
+
+/*map-geto*/
+.ReseñasIndex {
+  text-align: center;
+  color: blueviolet;
+  text-decoration: underline;
+  background-color: aqua; }
+
+.RemomendacionesIndex {
+  text-align: center;
+  text-decoration: underline;
+  color: violet; }
+
+/*Condicionales*/
+.BodyIndex {
+  background-image: linear-gradient(to bottom, aquamarine, white); }
+
+/*futura galeria de imagenes*/
+.img-1 {
+  width: 100px;
+  height: 50px; }
+
+.img-2 {
+  width: 200px;
+  height: 100px; }
+
+.img-3 {
+  width: 300px;
+  height: 150px; }
+
+.img-4 {
+  width: 400px;
+  height: 200px; }
+
+.img-5 {
+  width: 500px;
+  height: 250px; }
+
+/*each de colores*/
+.red {
+  color: red; }
+
+.blue {
+  color: blue; }
+
+.black {
+  color: black; }
+
+.white {
+  color: white; }
 
 * {
   box-sizing: border-box;
@@ -154,26 +247,26 @@
     .GaleriaContainer .ContainerFotos .foto4 {
       transition: height 5s, width 5s; }
       .GaleriaContainer .ContainerFotos .foto4:hover {
-        height: 380px;
-        width: 240px;
+        height: 400px;
+        width: 260px;
         transform: scale(1); }
     .GaleriaContainer .ContainerFotos .foto3 {
       transition: height 5s, width 5s; }
       .GaleriaContainer .ContainerFotos .foto3:hover {
-        height: 380px;
-        width: 240px;
+        height: 400px;
+        width: 260px;
         transform: scale(1); }
     .GaleriaContainer .ContainerFotos .foto2 {
       transition: height 5s, width 5s; }
       .GaleriaContainer .ContainerFotos .foto2:hover {
-        height: 380px;
-        width: 240px;
+        height: 400px;
+        width: 260px;
         transform: scale(1); }
     .GaleriaContainer .ContainerFotos .foto1 {
       transition: height 5s, width 5s; }
       .GaleriaContainer .ContainerFotos .foto1:hover {
-        height: 380px;
-        width: 240px;
+        height: 400px;
+        width: 260px;
         transform: scale(1); }
   .GaleriaContainer .ReseñasIndex {
     text-align: center;

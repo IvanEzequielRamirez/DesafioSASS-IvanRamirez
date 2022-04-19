@@ -3,4 +3,134 @@ $secundary-color: blue;
 $FuenteTitulo:30px; 
 $ColorBody: blueviolet;
 $letramediana:20px;
+$ancho:130px;
+$alto:200px;
+$vista: colorvisita1;
+
+/*Extend*/  
+%boton {
+
+  color: rgb(119, 87, 194);
+  text-align: center;
+  border-radius: 20px;
+
+}
+
+.boton--aceptar {
+
+  @extend %boton;
+  background-color: rgb(4, 83, 114);
+  color: white;
+}
+
+.botton--cancelar {
+
+  @extend %boton;
+  background-color: rgb(76, 2, 78);
+  color: white;
+
+}
+
+/*Extend aplicado en videos*/
+
+.VideoIndex1 {
+    width: 230px;
+    height: 100px;
+    margin-left: auto; }
+
+    .VideoIndex2 {
+    @extend .VideoIndex1;
+}
+
+/*Mixin*/
+@mixin size($horizontal, $vertical){
+    width: $horizontal;
+    height: $vertical;   
+}
+
+.ContactoContainer .VideoIndex1, .ContactoContainer .VideoIndex2 {
+    @include size(470px,290px);
+}
+
+
+
+
+/*mapa redes*/
+
+$redes:(
+    facebook:blue,
+    twitter: red,
+    tiktok: black,
+    whatssap: green
+);
+
+@each $red, $color in $redes {
+    .btn--#{$red}{
+        background-color: $color;
+        width: 15px;
+        height: 15px;
+    }
+}
+
+/*map-geto*/
+
+$estilos:(
+    centro: center,
+    color: blueviolet,
+    decoracion: underline,
+    fondo: aqua,
+    color2: violet
+);
+
+.ReseñasIndex{
+    text-align: map-get($estilos, centro);
+    color: map-get($estilos, color);
+    text-decoration: map-get($estilos, decoracion);
+    background-color: map-get($estilos, fondo);
+}
+
+.RemomendacionesIndex{
+    text-align: map-get($estilos, centro);
+    text-decoration: map-get($estilos, decoracion);
+    color: map-get($estilos, color2);
+}
+
+
+/*Condicionales*/
+
+.BodyIndex{
+    
+ @if $vista == colorvisita1 {
+    background-image: linear-gradient( to bottom, aquamarine, white);
+
+ } @else if $vista == colorvisita2{
+    background-image: linear-gradient( to bottom, rgb(73, 42, 245), white);
+
+ } @else{
+    background-image: linear-gradient( to bottom, rgb(8, 207, 25), white);
+ }
+
+
+}
+
+
+/*futura galeria de imagenes*/
+    
+@for $i from 1 through 5{
+    .img-#{$i}{
+        width: 100px * $i;
+        height: 50px * $i;
+    }
+}
+
+/*each de colores*/
+
+@each $color in red blue black white {
+    .#{$color}{
+        color:#{$color};
+    }
+
+
+    
+}
 
